@@ -1,0 +1,36 @@
+//connexion + attach : 
+
+            if (PS3.ConnectTarget())
+            {
+                string Message = "tu est conectée avec le SimplyLife by Paranctiss v1  ";
+                MessageBox.Show(Message, "Connecté !", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                string Message = "Connexion échouée :(";
+                MessageBox.Show(Message, "Erreur !", MessageBoxButtons.OK, MessageBoxIcon.Error); //connexion
+            }
+
+
+            
+            if (PS3.AttachProcess())
+            {
+                MessageBox.Show("Attaché avec succé !.", "Parfait !", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                PS3.CCAPI.Notify(CCAPI.NotifyIcon.FRIEND, "PS3 Prête !");
+            }
+            else { MessageBox.Show("Probleme lors de l'attachement", "Erreur...", MessageBoxButtons.OK, MessageBoxIcon.Error); } //Attach
+          
+        }
+
+
+//changer l'api : 
+
+PS3.ChangeAPI(SelectAPI.TargetManager);
+
+
+PS3.ChangeAPI(SelectAPI.ControlConsole);
+
+//Public partial class :
+
+private PS3API PS3 = new PS3API();
+private Random rand = new Random();

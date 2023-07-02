@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rtm_Ps3", "Rtm_Ps3.csproj", "{90352026-BA86-44A6-A947-687CADF63830}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90352026-BA86-44A6-A947-687CADF63830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90352026-BA86-44A6-A947-687CADF63830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90352026-BA86-44A6-A947-687CADF63830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90352026-BA86-44A6-A947-687CADF63830}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {518B28AE-1442-406A-982D-698313B343BE}
+	EndGlobalSection
+EndGlobal
