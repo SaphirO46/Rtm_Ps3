@@ -15,6 +15,7 @@ namespace Rtm_Ps3
     public partial class Form1 : Form
     {
         bool button4Activation = false;
+        public string TexteAEnvoyer { get; set; }
         private PS3API PS3 = new PS3API();
         private Random rand = new Random();
         public Form1()
@@ -28,13 +29,12 @@ namespace Rtm_Ps3
             PS3.ChangeAPI(SelectAPI.ControlConsole);
             if (PS3.ConnectTarget())
             {
-                string Message = "tu est conectée";
-                MessageBox.Show(Message, "Connected !", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                Form2 form2 = new Form2("                   YOU ARE CONNECTED !"); form2.Show(); ;
             }
             else
             {
-                string Message = "Connexion échouée :(";
-                MessageBox.Show(Message, "ERROR !", MessageBoxButtons.OK, MessageBoxIcon.Error); //connexion
+              
+                Form2 form2 = new Form2("                   ERROR\n Not Connected"); form2.Show();  //connexion
             }
 
 
@@ -49,7 +49,7 @@ namespace Rtm_Ps3
                 
                 PS3.CCAPI.Notify(CCAPI.NotifyIcon.PEN, "CONNECTED");
             }
-            else { MessageBox.Show("ERROR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); } //Attach
+            else { Form2 form2 = new Form2("                   ERROR"); form2.Show(); } //Attach
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 2:
@@ -79,7 +79,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 3:
@@ -91,7 +91,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 4:
@@ -103,7 +103,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 5:
@@ -115,7 +115,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 6:
@@ -127,7 +127,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 7:
@@ -139,7 +139,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 8:
@@ -151,7 +151,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 9:
@@ -163,7 +163,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 10:
@@ -177,7 +177,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
 
@@ -193,7 +193,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
             }
@@ -226,7 +226,7 @@ namespace Rtm_Ps3
                     PS3.SetMemory(0x004B2021, new byte[] { 0x80 });
 
                 }
-                catch { MessageBox.Show("ERROR"); }
+                catch { Form2 form2 = new Form2("                   ERROR"); form2.Show(); }
             }
             else if (button4Activation)
             {
@@ -236,7 +236,7 @@ namespace Rtm_Ps3
                     PS3.SetMemory(0x004B2021, new byte[] { 0x20 });
 
                 }
-                catch { MessageBox.Show("ERROR"); }
+                catch { Form2 form2 = new Form2("                   ERROR"); form2.Show(); }
             }
             else
             {
@@ -255,7 +255,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 2:
@@ -266,7 +266,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 3:
@@ -276,7 +276,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 4:
@@ -286,7 +286,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 5:
@@ -296,7 +296,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 6:
@@ -306,7 +306,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 7:
@@ -316,7 +316,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 8:
@@ -326,7 +326,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 9:
@@ -336,7 +336,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
                 case 10:
@@ -348,7 +348,7 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
 
@@ -362,10 +362,17 @@ namespace Rtm_Ps3
                     }
                     catch (Exception erreur)
                     {
-                        MessageBox.Show("ERROR");
+                        Form2 form2 = new Form2("                   ERROR"); form2.Show();
                     }
                     break;
             }
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+
+            Form2 form2 = new Form2("info"); form2.Show();
+
         }
     }
     }

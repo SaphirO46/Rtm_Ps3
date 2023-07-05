@@ -147,7 +147,7 @@
             // 
             // buttonInfo
             // 
-            this.buttonInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.buttonInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonInfo.BackColor = System.Drawing.SystemColors.Window;
             this.buttonInfo.FlatAppearance.BorderSize = 0;
             this.buttonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -158,6 +158,7 @@
             this.buttonInfo.TabIndex = 8;
             this.buttonInfo.Text = "?";
             this.buttonInfo.UseVisualStyleBackColor = false;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
             // Form1
             // 
