@@ -37,6 +37,7 @@
             this.trackBarKnockback = new System.Windows.Forms.TrackBar();
             this.trackBarFov = new System.Windows.Forms.TrackBar();
             this.buttonInfo = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarKnockback)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFov)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +81,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(226)))), ((int)(((byte)(234)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Oxanium Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(135, 288);
+            this.button3.Location = new System.Drawing.Point(141, 237);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(193, 78);
             this.button3.TabIndex = 2;
@@ -97,7 +98,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(226)))), ((int)(((byte)(234)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Oxanium Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(135, 194);
+            this.button4.Location = new System.Drawing.Point(141, 143);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(193, 78);
             this.button4.TabIndex = 4;
@@ -114,7 +115,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(226)))), ((int)(((byte)(234)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Oxanium Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(135, 382);
+            this.button5.Location = new System.Drawing.Point(141, 331);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(193, 78);
             this.button5.TabIndex = 5;
@@ -125,7 +126,7 @@
             // trackBarKnockback
             // 
             this.trackBarKnockback.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.trackBarKnockback.Location = new System.Drawing.Point(334, 288);
+            this.trackBarKnockback.Location = new System.Drawing.Point(340, 237);
             this.trackBarKnockback.Minimum = 1;
             this.trackBarKnockback.Name = "trackBarKnockback";
             this.trackBarKnockback.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -137,7 +138,7 @@
             // trackBarFov
             // 
             this.trackBarFov.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.trackBarFov.Location = new System.Drawing.Point(334, 382);
+            this.trackBarFov.Location = new System.Drawing.Point(340, 331);
             this.trackBarFov.Minimum = 1;
             this.trackBarFov.Name = "trackBarFov";
             this.trackBarFov.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -160,11 +161,21 @@
             this.buttonInfo.UseVisualStyleBackColor = false;
             this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 476);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(458, 82);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 653);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonInfo);
             this.Controls.Add(this.trackBarFov);
             this.Controls.Add(this.trackBarKnockback);
@@ -199,6 +210,7 @@
         private System.Windows.Forms.TrackBar trackBarKnockback;
         private System.Windows.Forms.TrackBar trackBarFov;
         private System.Windows.Forms.Button buttonInfo;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

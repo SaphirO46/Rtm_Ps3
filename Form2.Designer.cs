@@ -54,17 +54,15 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Oxanium Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.richTextBox1.Font = new System.Drawing.Font("Oxanium Medium", 8.25F, System.Drawing.FontStyle.Bold);
             this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.MaximumSize = new System.Drawing.Size(423, 355);
             this.richTextBox1.MinimumSize = new System.Drawing.Size(423, 355);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.RightMargin = 400;
             this.richTextBox1.Size = new System.Drawing.Size(423, 355);
             this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "aaaaaaaa\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" +
-    "bbb\n";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // Form2
             // 
@@ -77,6 +75,7 @@
             this.MaximumSize = new System.Drawing.Size(465, 426);
             this.MinimumSize = new System.Drawing.Size(465, 426);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
