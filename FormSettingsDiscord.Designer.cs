@@ -1,6 +1,6 @@
 ﻿namespace Rtm_Ps3
 {
-    partial class Form2
+    partial class FormSettingsDiscord
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSettingsDiscord));
             this.button4 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -42,42 +43,38 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(226)))), ((int)(((byte)(234)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Oxanium Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(131, 279);
+            this.button4.Location = new System.Drawing.Point(413, 124);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(193, 78);
+            this.button4.Size = new System.Drawing.Size(164, 61);
             this.button4.TabIndex = 5;
-            this.button4.Text = "OK";
+            this.button4.Text = "COMING SOON";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // richTextBox1
+            // pictureBox2
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Oxanium Medium", 8.25F, System.Drawing.FontStyle.Bold);
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
-            this.richTextBox1.MaximumSize = new System.Drawing.Size(423, 355);
-            this.richTextBox1.MinimumSize = new System.Drawing.Size(423, 355);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(423, 355);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.Image = global::Rtm_Ps3.Properties.Resources.Sans_titre;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(958, 229);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Form2
+            // FormSettingsDiscord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 379);
+            this.ClientSize = new System.Drawing.Size(982, 253);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(465, 426);
-            this.MinimumSize = new System.Drawing.Size(465, 426);
-            this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.MaximumSize = new System.Drawing.Size(1000, 300);
+            this.MinimumSize = new System.Drawing.Size(1000, 300);
+            this.Name = "FormSettingsDiscord";
+            this.Text = "Discord Syncronisation Settings";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,6 +82,6 @@
         #endregion
 
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

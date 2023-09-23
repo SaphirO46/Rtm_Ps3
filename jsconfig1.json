@@ -1,0 +1,20 @@
+{
+  "yourpresets": false,
+
+  "ip": "192.168.1.31",
+
+
+
+
+  "godmode": false,
+  "defaultspresets": false,
+  "fov90": false,
+  "bettersky": false,
+  "betterskyshottype": false,
+  "antikick": false,
+  "chunkopti": false,
+  "betterline": false
+
+
+
+}

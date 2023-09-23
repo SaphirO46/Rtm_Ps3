@@ -31,5 +31,10 @@ namespace Rtm_Ps3
         {
             this.Close();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

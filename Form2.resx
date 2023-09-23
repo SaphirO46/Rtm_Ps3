@@ -126,9 +126,8 @@ this 3 mods work really good, i think...?
 ccapi only sorry for tmapi.
 
  FAQ :
-Q : why only ccapi          | A : because nobody use tmapi
-Q : who created the rtm | A : SaphirO46 created this rtm, the 3 adresses come from misakii
-Q : why just 3 mods | A : i want to search my own memory adresse and that just a designe demo</value>
+
+Q : who created the rtm | A : SaphirO46 created this rtm, the 3 adresses come from misakii</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
